@@ -1,0 +1,9 @@
+2023-05-22 00:10:17,127 INFO     requests.session [__init__(request_session_gaijin :31)] mock功能启动
+2023-05-22 00:10:17,129 INFO     requests.session [send(request_session_gaijin :49)] 发送请求 >>> 接口地址 = POST http://123.60.0.43:9501/login
+2023-05-22 00:10:17,129 DEBUG    requests.session [send(request_session_gaijin :50)] 发送请求 >>> 请求头 = {'User-Agent': 'python-requests/2.30.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '50', 'Content-Type': 'application/json'}
+2023-05-22 00:10:17,129 DEBUG    requests.session [send(request_session_gaijin :51)] 发送请求 >>> 请求正文 = b'"{\\"captcha\\":\\"2222\\",\\"phone\\":\\"13399999999\\"}"'
+2023-05-22 00:10:17,130 DEBUG    urllib3.connectionpool [_new_conn(connectionpool :244)] Starting new HTTP connection (1): 123.60.0.43:9501
+2023-05-22 00:10:17,159 DEBUG    urllib3.connectionpool [_make_request(connectionpool :546)] http://123.60.0.43:9501 "POST /login HTTP/1.1" 500 223
+2023-05-22 00:10:17,159 INFO     requests.session [send(request_session_gaijin :53)] 收到响应 <<< 状态码 = 500
+2023-05-22 00:10:17,159 DEBUG    requests.session [send(request_session_gaijin :54)] 收到响应 <<< 响应头 = {'Server': 'Talllk', 'Connection': 'keep-alive', 'Content-Type': 'text/html', 'Date': 'Sun, 21 May 2023 16:10:17 GMT', 'Content-Length': '223', 'Content-Encoding': 'gzip'}
+2023-05-22 00:10:17,159 DEBUG    requests.session [send(request_session_gaijin :56)] 收到响应 <<< 响应正文 = b'{"code":500,"msg":"Internal Server Error.","data":null,"debug":"exception handler in [APP_ENV: test test43] get input: []","time":"2023-05-22 00:10:17","author":"\xc3\xa5\xc2\x91\xc2\xa8\xc3\xa6\xc2\x9d\xc2\xb0","user":{"uid":0,"tid":0},"interface":"App\\\\Controller\\\\UserController::login"}'
